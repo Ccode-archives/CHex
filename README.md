@@ -8,8 +8,3 @@ Print the ascii hex character stored in memory at the offset given.
 Equivelent of jump command in asm.
 # 0x03 (offset in memory to store value at) (hex value to store(can be ascii hex))
 Store a value in memory at the given offset.
-# You can check the given example file in a hex editor if you want to see some that was already written.
-The example prints hi and a newline in the teerminal if run with:
-```
-python3 vm.py hi
-```
