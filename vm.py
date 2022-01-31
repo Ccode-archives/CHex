@@ -48,7 +48,7 @@ while True:
         offset += 3
     # jump to hex stored in memory
     elif hex == "0x4":
-        offset = int(memory[int(hexcode[offset + 1]], 16), 16)
+        offset = int(memory[int(hexcode[offset + 1])], 16), 16)
     else:
         print("Unknown hex at offset: " + str(offset))
         sys.exit()
