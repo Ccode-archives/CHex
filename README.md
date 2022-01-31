@@ -12,3 +12,11 @@ Store a value in memory at the given offset.
 Jump to a program offset stored in memory.
 # Machine code can be written in a hex editor that is compatible with this.
 If you would like to see some code I have already written lease check the example binary.
+# What it simulates
+1. It inits the memory.
+2. It inits the only register the cpu has. (offset)
+3. It loads the first two bytes of the program file and checks if they say "hi" in ascii.
+4. It sets offset to 0x02
+5. It gets the command at the location of offset and runs it.
+6. It sets offset to the next command
+7. Goes back to step 5 and repeats ntil the program ends.
