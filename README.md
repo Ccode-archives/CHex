@@ -10,6 +10,8 @@ Equivelent of jump command in asm.
 Store a value in memory at the given offset.
 # 0x04 (offset in memory to get program offset from)
 Jump to a program offset stored in memory.
+# 0x05 (memory offset 1) (memory offset 2) (program offset to jump to)
+Jump to given program offset if two values in memory are equal.
 # Machine code can be written in a hex editor that is compatible with this.
 If you would like to see some code I have already written lease check the example binary.
 # What it simulates
