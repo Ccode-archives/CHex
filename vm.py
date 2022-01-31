@@ -49,6 +49,12 @@ while True:
     # jump to hex stored in memory
     elif hex == "0x4":
         offset = int(memory[int(hexcode[offset + 1], 16)], 16)
+    # check if values in memory are equal and jump if so
+    elif hex == "0x5":
+        if int(memory[int(hexcode[offset + 1], 16)], 16) == int(memory[int(hexcode[offset + 2], 16)], 16):
+            offset = int(hexcode[offset + 3], 16)
+        else:
+            offset = 4
     else:
         print("Unknown hex at offset: " + str(offset))
         sys.exit()
