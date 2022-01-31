@@ -9,4 +9,4 @@ Equivelent of jump command in asm.
 # 0x03 (offset in memory to store value at) (hex value to store(can be ascii hex))
 Store a value in memory at the given offset.
 # Machine code can be written in a hex editor that is compatible with this.
-If you wuld like to see some code I have already written lease check the example binary.
+If you would like to see some code I have already written lease check the example binary.
