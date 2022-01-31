@@ -54,7 +54,7 @@ while True:
         if int(memory[int(hexcode[offset + 1], 16)], 16) == int(memory[int(hexcode[offset + 2], 16)], 16):
             offset = int(hexcode[offset + 3], 16)
         else:
-            offset = 4
+            offset += 4
     else:
         print("Unknown hex at offset: " + str(offset))
         sys.exit()
