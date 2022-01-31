@@ -8,3 +8,4 @@ Print the ascii hex character stored in memory at the offset given.
 Equivelent of jump command in asm.
 # 0x03 (offset in memory to store value at) (hex value to store(can be ascii hex))
 Store a value in memory at the given offset.
+# Machine code can be written in a hex editor that is compatible with this.
