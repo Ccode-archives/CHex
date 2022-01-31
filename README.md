@@ -13,7 +13,7 @@ Jump to a program offset stored in memory.
 # 0x05 (memory offset 1) (memory offset 2) (program offset to jump to)
 Jump to given program offset if two values in memory are equal.
 # Machine code can be written in a hex editor that is compatible with this.
-If you would like to see some code I have already written lease check the example binary.
+If you would like to see some code I have already written please check the example binary.
 # What it simulates
 1. It inits the memory.
 2. It inits the only register the cpu has. (offset)
