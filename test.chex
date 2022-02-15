@@ -1,0 +1,5 @@
+str 0 104
+pr 0
+str 0 10
+pr 0
+jmp 2
