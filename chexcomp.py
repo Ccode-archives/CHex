@@ -27,7 +27,7 @@ wb(b'hi')
 for line in lines:
     linenum += 1
     split = line.split()
-    if line == "":
+    if line == "" or line.startswith(";"):
         pass
     elif line.startswith("pr "):
         if not len(split) == 2:
