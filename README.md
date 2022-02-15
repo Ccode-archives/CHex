@@ -1,5 +1,6 @@
 # CHex
 A bytecode vm written in python.
+> look at wiki for compiler instructions
 # hex command meaning
 > note: the first two hex values of a CHex program are the magic number  
 # 0x01 (offset in memory in hex)
