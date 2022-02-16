@@ -1,8 +1,6 @@
 ; print hi
 str 0 104
 pr 0
-str 0 10
-pr 0
 str 0 105
 pr 0
 str 0 10
