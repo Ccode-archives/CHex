@@ -13,7 +13,7 @@ def wb(byte):
         print("something went wrong during the writing process")
         sys.exit(1)
 def ewerr(err, errcode, line):
-    print("CHex compile error on line " + line + ":" + err)
+    print("CHex compile error on line " + str(line) + ":" + err)
     sys.exit(errcode)
 def create_file(filename):
     f = open(filename, "w")
