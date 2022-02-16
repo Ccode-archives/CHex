@@ -15,14 +15,19 @@ def wb(byte):
 def ewerr(err, errcode, line):
     print("CHex compile error on line " + line + ":" + err)
     sys.exit(errcode)
+def create_file(filename):
+    f = open(filename, "w")
+    f.close()
     
 
-
-f = open("test.chex", "r")
-lines = f.readlines()
-f.close()
+try:
+    f = open("test.chex", "r")
+    lines = f.readlines()
+    f.close()
+except:
+    ewerr("Missing file", 2, 0)
 linenum = 0
-os.system("touch test.chexc")
+create_file(test.chexc)
 wb(b'hi')
 for line in lines:
     linenum += 1
