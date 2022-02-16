@@ -2,11 +2,11 @@ import os
 import sys
 
 
-
+args = sys.argv
 
 def wb(byte):
     try:
-        f = open("test.chexc", "ab")
+        f = open("out.chexc", "ab")
         f.write(byte)
         f.close()
     except:
@@ -19,9 +19,14 @@ def create_file(filename):
     f = open(filename, "w")
     f.close()
     
+try:
+    filler = args[1]
+except:
+    print("No args given")
+    sys.exit(1)
 
 try:
-    f = open("test.chex", "r")
+    f = open(args[1], "r")
     lines = f.readlines()
     f.close()
 except:
