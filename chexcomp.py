@@ -2,27 +2,37 @@ import os
 import sys
 
 
-
+args = sys.argv
 
 def wb(byte):
     try:
-        f = open("test.chexc", "ab")
+        f = open("out.chexc", "ab")
         f.write(byte)
         f.close()
     except:
         print("something went wrong during the writing process")
         sys.exit(1)
 def ewerr(err, errcode, line):
-    print("CHex compile error on line " + line + ":" + err)
+    print("CHex compile error on line " + str(line) + ":" + err)
     sys.exit(errcode)
+def create_file(filename):
+    f = open(filename, "w")
+    f.close()
     
+try:
+    filler = args[1]
+except:
+    print("No args given")
+    sys.exit(1)
 
-
-f = open("test.chex", "r")
-lines = f.readlines()
-f.close()
+try:
+    f = open(args[1], "r")
+    lines = f.readlines()
+    f.close()
+except:
+    ewerr("Missing file", 2, 0)
 linenum = 0
-os.system("touch test.chexc")
+create_file("out.chexc")
 wb(b'hi')
 for line in lines:
     linenum += 1
