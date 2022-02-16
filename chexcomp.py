@@ -27,7 +27,7 @@ try:
 except:
     ewerr("Missing file", 2, 0)
 linenum = 0
-create_file(test.chexc)
+create_file("test.chexc")
 wb(b'hi')
 for line in lines:
     linenum += 1
